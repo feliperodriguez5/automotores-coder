@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("../../imagenes/ruta-desierto.avif");
+.section__catalogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  /* color: blue; */
+  /* nombre de color, hexadecimal, rgb y rgba */
+  /* color: #dae2da; */
+  /* color: rgb(25, 20, 100); */
+  color: #000000;
+  width: 100%;
+  font-size: 2.5rem;
+  /* unidades de medida | px em rem % */
+  /* generalmente los textos van en pixeles |  ancho y alto con % */
+  margin: 30px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+header {
+  /* fondo del header */
+  background-image: url(../../imagenes/ruta-desierto.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+header img {
+  width: 200px;
+}
+header a {
+  text-decoration: none;
+  text-align: right;
+  color: #000000;
+}
+header .navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+main {
+  background-color: #e0be72;
+  height: 800px;
+}
+main .buscador {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 10px;
+}
+main .contenedor {
+  display: grid;
+  grid-template-areas: "mclaren_foto ferrari_foto lotus_foto" "mclaren_titulo ferrari_titulo lotus_titulo" "mclaren_parrafo ferrari_parrafo lotus_parrafo" "boton1 boton2 boton3";
+  /* ancho de cada columna - usar medidas relativas como fr o %*/
+  grid-template-columns: 1fr 1fr 1fr;
+  /* alto de cada fila - puede usarse px */
+  grid-template-rows: 300px 100px 100px 50px;
+  justify-items: center;
+  align-items: center;
+}
+main .contenedor img {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: -15px 8px 34px -1px rgba(0, 0, 0, 0.75);
+}
+main .contenedor .mclaren_foto {
+  grid-area: mclaren_foto;
+}
+main .contenedor .mclaren_titulo {
+  grid-area: mclaren_titulo;
+}
+main .contenedor .mclaren_parrafo {
+  grid-area: mclaren_parrafo;
+}
+main .contenedor .boton1 {
+  grid-area: boton1;
+}
+main .contenedor .ferrari_foto {
+  grid-area: ferrari_foto;
+}
+main .contenedor .ferrari_titulo {
+  grid-area: ferrari_titulo;
+}
+main .contenedor .ferrari_parrafo {
+  grid-area: ferrari_parrafo;
+}
+main .contenedor .boton2 {
+  grid-area: boton2;
+}
+main .contenedor .lotus_foto {
+  grid-area: lotus_foto;
+}
+main .contenedor .lotus_titulo {
+  grid-area: lotus_titulo;
+}
+main .contenedor .lotus_parrafo {
+  grid-area: lotus_parrafo;
+}
+main .contenedor .boton3 {
+  grid-area: boton3;
+}
+main .contenedor .mclaren_foto.ferrari_foto.lotus_foto {
+  width: 200px;
+}
+main .formulario__contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_catalogo {
+  overflow: auto;
+  padding: 20px;
+}
+.main_catalogo .section__catalogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main_catalogo .section__catalogo .caja__catalogo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.main_catalogo .section__catalogo .caja__catalogo img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: -15px 8px 34px -1px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  background-color: #468ae4;
+  padding: 10px;
+  display: flex;
+}
+footer img {
+  width: 200px;
+}
+footer h3 {
+  margin-left: 15px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+footer div img {
+  width: 50px;
+  padding: 10px;
+}
+footer .redesSociales {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+footer .logos {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer .logos img {
+  width: 50px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    width: 70px;
+  }
+  header h1 {
+    width: auto;
+    margin: 5px;
+    font-size: 1.5rem;
+  }
+  main {
+    height: 1200px;
+  }
+  main h2 {
+    font-size: 1.2rem;
+  }
+  main .contenedor {
+    height: 700px;
+    grid-template-areas: "mclaren_foto" "mclaren_titulo" "mclaren_parrafo" "boton1" "ferrari_foto" "ferrari_titulo" "ferrari_parrafo" "boton2" "lotus_foto" "lotus_titulo" "lotus_parrafo" "boton3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 50px 50px 30px 200px 50px 50px 30px 200px 50px 50px 30px;
+  }
+  main .contenedor h3 {
+    font-size: 0.7rem;
+  }
+  main .contenedor p {
+    font-size: 0.5rem;
+  }
+  .section__catalogo {
+    width: auto;
+  }
+  .section__catalogo .caja__catalogo {
+    flex-direction: column;
+    width: 70%;
+  }
+  .section__catalogo .caja__catalogo h3 {
+    font-size: 1.2rem;
+  }
+  .section__catalogo .caja__catalogo img {
+    width: 70px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .redesSociales {
+    width: 98%;
+  }
+  footer img {
+    width: 70px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

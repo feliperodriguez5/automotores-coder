@@ -1,0 +1,109 @@
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+
+        img {
+
+            width: 70px;
+
+        }
+
+        h1 {
+            width: auto;
+            margin: 5px;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    main {
+        height: 1200px;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .contenedor {
+
+            height: 700px;
+            grid-template-areas:
+                "mclaren_foto"
+                "mclaren_titulo"
+                "mclaren_parrafo"
+                "boton1"
+                "ferrari_foto"
+                "ferrari_titulo"
+                "ferrari_parrafo"
+                "boton2"
+                "lotus_foto"
+                "lotus_titulo"
+                "lotus_parrafo"
+                "boton3"
+            ;
+
+            grid-template-columns: 1fr;
+
+            grid-template-rows: 200px 50px 50px 30px 200px 50px 50px 30px 200px 50px 50px 30px;
+
+            h3 {
+                font-size: 0.7rem;
+            }
+
+            p {
+                font-size: .5rem;
+            }
+
+        }
+
+
+
+
+
+
+
+
+    }
+
+    .section__catalogo {
+        width: auto;
+
+
+
+        .caja__catalogo {
+            flex-direction: column;
+            width: 70%;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            img {
+                width: 70px;
+            }
+
+
+        }
+
+
+
+    }
+
+    footer {
+        flex-direction: column;
+
+        .redesSociales {
+            width: 98%;
+        }
+
+        img {
+            width: 70px;
+        }
+
+
+    }
+
+
+
+
+}

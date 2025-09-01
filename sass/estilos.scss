@@ -1,0 +1,20 @@
+// comentario de sass (no aparece en css)
+
+
+
+// Variable
+
+// $azul: #041562;
+
+
+//header
+@use "partials/header" as*;
+
+//main
+@use "partials/main" as*;
+
+//footer
+@use "partials/footer" as*;
+
+//mediaQ
+@use "partials/mediaQ" as*;

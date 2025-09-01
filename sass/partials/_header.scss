@@ -1,0 +1,47 @@
+@use "variables" as*;
+
+
+h1 {
+    /* color: blue; */
+    /* nombre de color, hexadecimal, rgb y rgba */
+    /* color: #dae2da; */
+    /* color: rgb(25, 20, 100); */
+    color: #000000;
+    width: 100%;
+    font-size: 2.5rem;
+    /* unidades de medida | px em rem % */
+    /* generalmente los textos van en pixeles |  ancho y alto con % */
+    margin: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
+
+header {
+    /* fondo del header */
+    background-image: url(../../imagenes/ruta-desierto.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+
+    img {
+        width: 200px;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: right;
+        color: #000000;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+
+    }
+
+}
