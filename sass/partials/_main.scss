@@ -103,10 +103,25 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        label {
+            padding: 15px;
+            margin: 10px;
+            gap: 10px;
+        }
+
+        input {
+            margin: 10px;
+        }
+        
+        textarea {
+            margin: 10px;
+        }
+        
     }
 }
 
-// AQUÍ ESTÁ LA MODIFICACIÓN SIMPLE Y EFECTIVA
+
 .main_catalogo {
     
     padding: 20px;
