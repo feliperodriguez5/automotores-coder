@@ -18,7 +18,7 @@
     }
 
     main {
-        
+
 
         h2 {
             font-size: 1.2rem;
@@ -26,7 +26,7 @@
 
         .contenedor {
 
-            height: 700px;
+            height: 100%;
             grid-template-areas:
                 "mclaren_foto"
                 "mclaren_titulo"
@@ -57,16 +57,9 @@
         }
 
 
-
-
-
-
-
-
     }
 
-        body .main_catalogo {
-        padding: 10px;
+    .main_catalogo {
 
         .section__catalogo {
             width: 100%;
@@ -85,16 +78,10 @@
                     font-size: 1.2rem;
                 }
 
-                img {
-                    width: 70px;
-                }
 
 
             }
         }
-
-
-
     }
 
     footer {
@@ -114,4 +101,130 @@
 
 
 
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            width: 120px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px;
+        }
+
+        .navbar {
+            width: 60%;
+            justify-content: center;
+        }
+    }
+
+    main {
+        height: auto;
+        padding: 20px;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .contenedor {
+            grid-template-areas:
+                "mclaren_foto ferrari_foto"
+                "mclaren_titulo ferrari_titulo"
+                "mclaren_parrafo ferrari_parrafo"
+                "boton1 boton2"
+                "lotus_foto lotus_foto"
+                "lotus_titulo lotus_titulo"
+                "lotus_parrafo lotus_parrafo"
+                "boton3 boton3";
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 250px 80px 80px 40px 250px 80px 80px 40px;
+            gap: 15px;
+
+            // ¡AQUÍ ESTÁ LA MODIFICACIÓN CLAVE!
+            img {
+                width: 90%;
+                height: 220px;           // Altura fija para tablet
+                object-fit: cover;       // Evita deformación
+                object-position: center; // Centra la imagen
+                border-radius: 20px;
+                box-shadow: -15px 8px 34px -1px rgba(0, 0, 0, 0.75);
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .main_catalogo {
+        padding: 15px;
+
+        .section__catalogo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            .caja__catalogo {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+
+                h3 {
+                    font-size: 1.3rem;
+                    margin-bottom: 10px;
+                }
+
+                img {
+                    width: 200px;
+                    max-width: 200px;
+                    height: 150px;          // Altura fija para catálogo
+                    object-fit: cover;      // También para catálogo
+                    object-position: center;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        img {
+            width: 120px;
+        }
+
+        h3 {
+            margin: 15px 0;
+        }
+
+        .redesSociales {
+            justify-content: center;
+        }
+
+        .logos {
+            justify-content: center;
+            
+            img {
+                width: 40px;
+                padding: 5px;
+            }
+        }
+    }
 }

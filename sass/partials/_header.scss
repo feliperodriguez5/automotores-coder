@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fontLato;
 
 }
 
@@ -13,7 +14,7 @@ h1 {
     /* nombre de color, hexadecimal, rgb y rgba */
     /* color: #dae2da; */
     /* color: rgb(25, 20, 100); */
-    color: #000000;
+    color: $primaryColor;
     width: 100%;
     font-size: 2.5rem;
     /* unidades de medida | px em rem % */
@@ -22,12 +23,14 @@ h1 {
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
+    font-family: $fontRoboto;
+    
 
 }
 
 header {
     /* fondo del header */
-    background-image: url(../../imagenes/ruta-desierto.avif);
+    background-image: url(../imagenes/ruta-desierto.avif);
     background-size: cover;
     background-position: center;
     display: flex;

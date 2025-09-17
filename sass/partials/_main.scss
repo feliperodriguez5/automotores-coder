@@ -1,5 +1,7 @@
+@use "variables" as*;
+
 main {
-    background-color: #e0be72;
+    background-color: $backgroundColor;
     padding: 30px;
   
 
@@ -12,6 +14,7 @@ main {
     }
 
     h2 {
+        color: $primaryColor;
         font-size: 1.7rem;
         text-align: center;
         text-decoration: underline;
@@ -111,7 +114,6 @@ main {
 }
 
 .main_catalogo {
-    overflow: auto;
     padding: 20px;
 
 

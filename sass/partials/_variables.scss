@@ -1,21 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url("../../imagenes/ruta-desierto.avif");
+$fontRoboto: 'Roboto', Arial, sans-serif; 
+$fontLato: 'Lato', sans-serif;
 
+$primaryColor: #da6161;
+$backgroundColor: #e0be72;
 
 //mixin
-@mixin imagenfondo ($url: "../../imagenes/ruta-desierto.avif", $size: cover, $position: center, $display: flex) {
-    background-image: url($url);
-    background-size: $size;
-    background-position: $position;
-    display: $display;
-}
+
 
 //extend
-
-.section__catalogo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
