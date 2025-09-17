@@ -65,24 +65,30 @@
 
     }
 
-    .section__catalogo {
-        width: auto;
+    .main_catalogo {
+        padding: 10px;
+
+        .section__catalogo {
+            width: 100%;
+            flex-wrap: wrap;
 
 
 
-        .caja__catalogo {
-            flex-direction: column;
-            width: 70%;
+            .caja__catalogo {
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 70%;
 
-            h3 {
-                font-size: 1.2rem;
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                img {
+                    width: 70px;
+                }
+
+
             }
-
-            img {
-                width: 70px;
-            }
-
-
         }
 
 
