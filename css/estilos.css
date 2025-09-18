@@ -247,10 +247,10 @@ footer .logos img {
     grid-template-rows: 200px 50px 50px 30px 200px 50px 50px 30px 200px 50px 50px 30px;
   }
   main .contenedor h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   main .contenedor p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   .main_catalogo .section__catalogo {
     width: 100%;
@@ -263,7 +263,10 @@ footer .logos img {
     width: 70%;
   }
   .main_catalogo .section__catalogo .caja__catalogo h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .main_catalogo .section__catalogo .caja__catalogo p {
+    font-size: 0.8rem;
   }
   footer {
     flex-direction: column;
